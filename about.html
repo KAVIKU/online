@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Book Haven</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/about.css">
+  <!-- Add jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="custom.html">Custom Page</a>
+    </nav>
+  </header>
+
+  <main class="about">
+    <section class="about-intro">
+      <h1>About Book Haven Bookstore</h1>
+      <p>
+        <strong>Book Haven Bookstore</strong> is a local treasure for book enthusiasts, offering a diverse selection 
+        of books, magazines, journals, and office supplies. Rooted in fostering literary exploration and a love for reading, 
+        our mission is to create an online presence that mirrors our dedication to the world of words.
+      </p>
+    </section>
+
+    <section class="about-mission">
+      <h2>Our Mission</h2>
+      <p>
+        Our goal is to amplify our visibility, cultivate a vibrant literary community, and simplify the process of 
+        book inquiries and purchases. Whether you’re an avid reader, a student, or someone looking for high-quality 
+        office essentials, Book Haven Bookstore has something for everyone.
+      </p>
+    </section>
+
+    <section class="about-hours">
+      <h2>Hours of Operation</h2>
+      <ul>
+        <li><strong>Monday–Friday:</strong> 9 a.m. to 8 p.m.</li>
+        <li><strong>Saturday:</strong> 10 a.m. to 6 p.m.</li>
+        <li><strong>Sunday:</strong> 11 a.m. to 5 p.m.</li>
+      </ul>
+      <button id="toggle-hours">Toggle Hours</button>
+    </section>
+
+    <section class="feedback-form">
+      <h2>We Value Your Feedback</h2>
+      <p>Have a suggestion or want to place a custom order? Fill out the form below:</p>
+      <form id="feedbackForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Feedback / Order Details:</label>
+        <textarea id="message" name="message" placeholder="Enter your feedback or custom order details" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="feedback-message"></p>
+    </section>
+  </main>
+
+  <!-- Subscription Section (added) -->
+  <footer>
+    <p>&copy; 2024 Book Haven Bookstore. All rights reserved.</p>
+    <p>Follow us on <a href="#">Facebook</a>, <a href="#">Instagram</a>, and <a href="#">Twitter</a>.</p>
+    
+    <!-- Subscription Section -->
+    <div class="subscribe-section">
+      <input type="email" id="subscribe-email" placeholder="Enter your email" required>
+      <button id="subscribe-button">Subscribe</button>
+    </div>
+  </footer>
+
+  <script src="js/about.js"></script>
+</body>
+</html>

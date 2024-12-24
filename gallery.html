@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Book Haven</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="custom.html">Custom Page</a>
+      <a href="about.html">About Us</a>
+    </nav>
+    <button id="view-cart">View Cart (0)</button>
+  </header>
+  <main class="gallery">
+    <h2>Gallery</h2>
+    <p>Explore our collection of books, magazines, and more!</p>
+    <div class="gallery-grid">
+      <!-- Gallery Items -->
+      <div class="gallery-item" data-name="Book 1" data-price="15">
+        <img src="Images/Client3_Book1.png" alt="Book 1">
+        <p>Book 1 - $15</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="gallery-item" data-name="Book 2" data-price="20">
+        <img src="Images/Client3_Book2.png" alt="Book 2">
+        <p>Book 2 - $20</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="gallery-item" data-name="Book 3" data-price="25">
+        <img src="Images/Client3_Book3.png" alt="Book 3">
+        <p>Book 3 - $25</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="gallery-item" data-name="Magazine 1" data-price="10">
+        <img src="Images/Client3_Magazine1.png" alt="Magazine 1">
+        <p>Magazine 1 - $10</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="gallery-item" data-name="Magazine 2" data-price="12">
+        <img src="Images/Client3_Magazine2.png" alt="Magazine 2">
+        <p>Magazine 2 - $12</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="gallery-item" data-name="Magazine 3" data-price="8">
+        <img src="Images/Client3_Magazine3.png" alt="Magazine 3">
+        <p>Magazine 3 - $8</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="gallery-item" data-name="Notebook" data-price="5">
+        <img src="Images/Client3_Notebook.png" alt="Notebook">
+        <p>Notebook - $5</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="gallery-item" data-name="Stickers" data-price="3">
+        <img src="Images/Client3_Stickers.png" alt="Stickers">
+        <p>Stickers - $3</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="gallery-item" data-name="Tote Bag" data-price="15">
+        <img src="Images/Client3_ToteBag.png" alt="Tote Bag">
+        <p>Tote Bag - $15</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Book Haven Bookstore. All rights reserved.</p>
+    <p>Follow us on <a href="#">Facebook</a>, <a href="#">Instagram</a>, and <a href="#">Twitter</a>.</p>
+    <div class="subscribe-section">
+      <input type="email" id="subscribe-email" placeholder="Enter your email" required>
+      <button id="subscribe-button">Subscribe</button>
+    </div>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="hidden">
+    <div id="cart-content">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="total-price">Total: $0</p>
+      <!-- Added Phone Input Field for MPesa -->
+      <label for="customer-phone">Enter your Phone Number for MPesa:</label>
+      <input type="tel" id="customer-phone" placeholder="e.g., 0712345678" required>
+      <button id="process-order">Process Order</button> <!-- Process Order button -->
+      <button id="close-cart">Close</button> <!-- Close button -->
+    </div>
+  </div>
+
+  <script src="js/gallery.js"></script>
+</body>
+</html>
